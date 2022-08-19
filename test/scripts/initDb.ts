@@ -11,7 +11,7 @@ const data = fs.readFileSync(`${__dirname}/../fixtures/data.sql`, 'utf8');
 async function initDb(): Promise<void> {
     try {
         // setup the database
-        const conn = await mysql.createConnection({
+        const conn = await mysql.createPool({
             ...config,
             multipleStatements: true,
         });

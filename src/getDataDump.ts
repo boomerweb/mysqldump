@@ -63,7 +63,7 @@ async function getDataDump(
         : (sql: string) => sql;
 
     // we open a new connection with a special typecast function for dumping data
-    const connection = mysql.createConnection(
+    const connection = mysql.createPool(
         merge([
             connectionOptions,
             {

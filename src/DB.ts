@@ -11,7 +11,7 @@ class DB {
     }
 
     public static async connect(options: mysql.IConnectionConfig): Promise<DB> {
-        const instance = new DB(await mysql.createConnection(options));
+        const instance = new DB(await mysql.createPool(options));
         pool.push(instance);
 
         return instance;
