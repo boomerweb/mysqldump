@@ -33,7 +33,7 @@ function buildInsertValue(row: QueryRes, table: Table): string {
     return `(${table.columnsOrdered.map(c => row[c]).join(',')})`;
 }
 
-function executeSql(connection: mysql.Connection, sql: string): Promise<void> {
+function executeSql(connection: mysql.Pool, sql: string): Promise<void> {
     return new Promise((resolve, reject) =>
         connection.query(sql, err =>
             err ? /* istanbul ignore next */ reject(err) : resolve(),

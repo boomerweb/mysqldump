@@ -1,6 +1,6 @@
 {
-    "name": "mysqldump",
-    "version": "3.2.0",
+    "name": "@universenl/mysqldump",
+    "version": "3.2.2",
     "description": "Create a DUMP from MySQL",
     "main": "dist/cjs.js",
     "module": "dist/es.js",
@@ -23,7 +23,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/assignar/mysqldump"
+        "url": "https://github.com/boomerweb/mysqldump"
     },
     "keywords": [
         "backup",
@@ -38,9 +38,9 @@
     "author": "Brad Zacher",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/assignar/mysqldump/issues"
+        "url": "https://github.com/boomerweb/mysqldump/issues"
     },
-    "homepage": "https://github.com/assignar/mysqldump",
+    "homepage": "https://github.com/boomerweb/mysqldump",
     "dependencies": {
         "deepmerge": "^3.2.0",
         "mysql2": "^2.1.0",
@@ -51,7 +51,7 @@
         "@types/extend": "^3.0.1",
         "@types/invariant": "^2.2.29",
         "@types/jest": "^24.0.13",
-        "@types/mysql": "^2.15.6",
+        "@types/mysql": "^2.15.21",
         "@types/node": "^12.0.2",
         "@types/sqlstring": "^2.2.1",
         "@types/tmp": "^0.1.0",
